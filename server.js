@@ -28,6 +28,6 @@ app.get('/:name', (req, res) => {
   );
 });
 
-app.listen(properties.PORT, (req, res) => {
-  console.log(`Server is running on ${properties.PORT} port.`);
+app.listen(4000, (req, res) => {
+  console.log(`Server is running on 4000 port.`);
 });
