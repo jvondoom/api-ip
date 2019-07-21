@@ -13,6 +13,7 @@
   "author": "Juan von Doom",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "marked": "^0.7.0"
   }
 }
