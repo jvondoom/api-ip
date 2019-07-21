@@ -25,7 +25,7 @@ app.get('/ip', (req, res) => {
   );
 });
 
-app.get('/ip:name', (req, res) => {
+app.get('/ip/:name', (req, res) => {
   const name = req.params.name;
   const ipAddr = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
