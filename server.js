@@ -3,7 +3,9 @@ const express = require('express');
 const fs = require('fs');
 const marked = require('marked');
 
-const PORT = process.env.PORT || 4000;
+const properties = require('./config/properties');
+
+const PORT = process.env.PORT || properties.PORT;
 
 const app = express();
 
