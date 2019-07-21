@@ -3,7 +3,7 @@ const express = require('express');
 const fs = require('fs');
 const marked = require('marked');
 
-const properties = require('./config/properties');
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 
@@ -39,6 +39,6 @@ app.get('/ip:name', (req, res) => {
   );
 });
 
-app.listen(properties.PORT, (req, res) => {
-  console.log(`Server is running on ${properties.PORT} port.`);
+app.listen(PORT, (req, res) => {
+  console.log(`Server is running on ${PORT} port.`);
 });
